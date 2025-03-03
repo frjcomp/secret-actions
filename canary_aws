@@ -1,0 +1,5 @@
+[default] 
+ aws_access_key_id = AKIAT4GVSAXXEK64O6KD 
+ aws_secret_access_key = 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 
+ output = json 
+ region = us-east-2
