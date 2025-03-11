@@ -12,6 +12,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       - name: Run a one-line script
-        run: cat config.jsin
+        run: cat config.json
       - name: Run a one-line script
         run: cat pipeleak_azure.pem
