@@ -8,6 +8,13 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+      - name: Create a zip
+        run: echo "datadog_api_key=secret_artifact_value" > an_artifact.txt && zip artifact_archive_file.zip an_artifact.txt
+      - name: Archive Zip
+        uses: actions/upload-artifact@v4
+        with:
+          name: Archive_ZIP
+          path: artifact_archive_file.zip  
       - name: Archive Canary
         uses: actions/upload-artifact@v4
         with:
